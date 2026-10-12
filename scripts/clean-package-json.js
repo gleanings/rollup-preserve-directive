@@ -26,7 +26,6 @@ const distParentPath = getDirectoryBy('dist', 'directory');
 packageJson = {
   ...packageJson,
   main: cjsPrefix + '/index.js', // 旧版本 CommonJs 入口
-  module: esPrefix + '/index.js', // 旧版本 ESM 入口
   types: dtsPrefix + '/index.d.ts', // 旧版本类型入口
   author: {
     name: '泥豆君',
@@ -50,15 +49,15 @@ packageJson = {
     },
   },
   keywords: ['rollup-preserve-directive', 'mudbean', 'vvi'],
-  homepage: 'https://npm.lmssee.com/rollup-preserve-directive',
+  homepage: 'https://npms.gleanings.cn/rollup-preserve-directive',
   dependencies: dependencies,
   bugs: {
-    url: 'https://github.com/MrMudBean/rollup-preserve-directive/issues',
+    url: 'https://github.com/gleanings/rollup-preserve-directive/issues',
     email: 'Mr.MudBean@outlook.com',
   },
   repository: {
     type: 'git',
-    url: 'git+https://github.com/MrMudBean/rollup-preserve-directive.git',
+    url: 'git+https://github.com/gleanings/rollup-preserve-directive.git',
   },
   publishConfig: {
     access: 'public',
